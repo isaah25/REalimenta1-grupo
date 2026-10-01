@@ -223,66 +223,83 @@ function WorldVisual() {
 
           <div className="absolute inset-8 rounded-full bg-[#E7F0ED] border border-[#63C7B2]/30 flex items-center justify-center overflow-hidden">
             <svg
-              viewBox="0 0 200 200"
-              className="w-full h-full p-7"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle
-                cx="100"
-                cy="100"
-                r="82"
-                fill="#DCEBE6"
-                stroke="#63C7B2"
-                strokeWidth="3"
-              />
+  viewBox="0 0 200 200"
+  className="w-full h-full p-7"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  {/* Fundo circular suave */}
+  <circle cx="100" cy="100" r="82" fill="#E7F4EF" />
 
-              <path
-                d="M42 82C55 69 68 75 78 66C88 57 94 41 108 45C121 49 118 65 130 70C143 75 159 66 165 81C170 94 157 101 150 111C143 121 151 135 139 144C126 153 115 140 103 146C91 152 82 162 69 155C56 148 61 132 51 123C41 114 34 96 42 82Z"
-                fill="#63C7B2"
-                opacity="0.8"
-              />
+  {/* Seta Superior (Verde Escuro Forte) */}
+  <path
+    d="M 50 100 A 50 50 0 0 1 145 80"
+    stroke="#1B4D3E"
+    strokeWidth="8"
+    strokeLinecap="round"
+  />
+  <path
+    d="M 132 68 L 150 82 L 132 94"
+    stroke="#1B4D3E"
+    strokeWidth="8"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  />
 
-              <path
-                d="M74 46C82 53 82 62 75 68C68 73 60 69 57 61C54 54 62 46 74 46Z"
-                fill="#A8D8CC"
-              />
+  {/* Seta Inferior (Verde Escuro Forte) */}
+  <path
+    d="M 150 100 A 50 50 0 0 1 55 120"
+    stroke="#1B4D3E"
+    strokeWidth="8"
+    strokeLinecap="round"
+  />
+  <path
+    d="M 68 132 L 50 118 L 68 106"
+    stroke="#1B4D3E"
+    strokeWidth="8"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  />
 
-              <path
-                d="M126 91C139 85 150 91 151 101C152 111 140 117 131 114C122 111 119 98 126 91Z"
-                fill="#A8D8CC"
-              />
+  {/* Prato Base Central */}
+  <ellipse cx="100" cy="108" rx="36" ry="18" fill="#FFFFFF" />
+  <ellipse cx="100" cy="105" rx="28" ry="12" fill="#C2E0D5" />
 
-              <path
-                d="M76 119C86 114 97 120 96 130C95 140 84 145 76 140C68 135 68 124 76 119Z"
-                fill="#A8D8CC"
-              />
+  {/* Broto Central */}
+  <path
+    d="M 100 105 Q 98 90 92 82"
+    stroke="#1B4D3E"
+    strokeWidth="3.5"
+    strokeLinecap="round"
+  />
+  <path
+    d="M 98 95 C 80 90 82 76 96 82 C 98 88 98 93 98 95 Z"
+    fill="#2E7D5B"
+  />
+  <path
+    d="M 99 92 C 117 87 115 73 101 79 C 99 85 99 90 99 92 Z"
+    fill="#1B4D3E"
+  />
 
-              <path
-                d="M38 101C53 95 63 101 67 110"
-                stroke="#FFFFFF"
-                strokeWidth="2"
-                strokeLinecap="round"
-                opacity="0.7"
-              />
-
-              <path
-                d="M109 38C121 43 131 50 137 59"
-                stroke="#FFFFFF"
-                strokeWidth="2"
-                strokeLinecap="round"
-                opacity="0.7"
-              />
-            </svg>
+  {/* Folhas Voadoras */}
+  <path
+    d="M 44 94 C 36 86 42 74 52 80 C 50 90 46 93 44 94 Z"
+    fill="#2E7D5B"
+  />
+  <path
+    d="M 156 106 C 164 114 158 126 148 120 C 150 110 154 107 156 106 Z"
+    fill="#2E7D5B"
+     />
+        </svg>   
           </div>
         </div>
 
-        <div className="absolute -top-2 -right-4 glass rounded-xl px-3 py-2 text-xs font-mono text-[#4A8F81] border border-[#63C7B2]/20">
-          🌱 Sustentabilidade
+        <div className="absolute -top-2 -right-4 glass rounded-xl px-3 py-2 text-xs font-mono text-white border border-[#63C7B2]/30 shadow-md">
+  🌱 Sustentabilidade
         </div>
 
-        <div className="absolute -bottom-2 -left-4 glass rounded-xl px-3 py-2 text-xs font-mono text-[#A77A39] border border-[#D9A85C]/20">
-          🌎 Seja consciente
+        <div className="absolute -bottom-2 -left-4 glass rounded-xl px-3 py-2 text-xs font-mono text-white border border-[#D9A85C]/30 shadow-md">
+  🌎 Seja consciente
         </div>
       </div>
     </div>
