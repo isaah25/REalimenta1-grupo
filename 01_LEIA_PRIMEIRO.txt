@@ -1,0 +1,22 @@
+REalimenta - versão preparada para GitHub Codespaces
+
+1. Crie/abra o Codespace a partir do repositório.
+2. Aguarde a instalação automática das dependências.
+3. No terminal, execute: npm start
+4. Abra a porta 5173 em PORTS.
+
+O npm start inicia:
+- Front-end React/Vite: porta 5173
+- API Node/Express + SQLite: porta 3001
+
+LOGIN DE TESTE (ALUNO)
+RA: 123456
+Senha: 123456
+
+ADMINISTRADOR DE TESTE
+Usuário: admin
+Senha: admin123
+
+Também é possível criar um novo acesso de aluno pela própria tela de login.
+
+IMPORTANTE: as credenciais acima são apenas para demonstração escolar.
